@@ -23,18 +23,19 @@ class ViewController: UIViewController {
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
         weightLabel.text = "\(String(format: "%.0f", sender.value))Kg"
-        
-        
     }
      
     @IBAction func calculatePressed(_ sender: UIButton) {
         let height = heightSlider.value
         let weight = weightSlider.value
-        let bmi = Int(weight / pow(height, 2))
+        let bmi = weight / pow(height, 2)
         print(bmi)
         
         let secondVC = SecondViewController()
+        secondVC.bmiValue = String(format: "%.1f", bmi)
+        
         self.present(secondVC, animated: true, completion: nil)
+        
     }
     
 }
