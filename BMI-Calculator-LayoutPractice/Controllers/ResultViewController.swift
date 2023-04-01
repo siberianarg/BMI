@@ -24,7 +24,8 @@ class ResultViewController: UIViewController {
     
     //dismisses resoultVC
     @IBAction func recalculatePressed(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        //dismmiss the presented VC by dismiss method 
+        dismiss(animated: true, completion: nil)
     }
     
 }
