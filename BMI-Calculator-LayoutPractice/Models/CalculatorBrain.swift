@@ -6,14 +6,12 @@ struct CalculatorBrain {
     var bmi: BMI?
     
     func getBMIValue() -> String {
-        
         let bmiValueTo1DecimalPlace = String(format: "%.1f", bmi?.value ?? 0.0)
         return bmiValueTo1DecimalPlace
-        
     }
     
     func getAdvice() -> String {
-        return bmi?.advice ?? ""
+        return bmi?.advice ?? "no advice"
     }
     
     func getColor() -> UIColor {

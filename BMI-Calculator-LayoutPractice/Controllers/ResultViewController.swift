@@ -13,7 +13,7 @@ class ResultViewController: UIViewController {
     var bmiValue: String?
     var advice: String?
     var color: UIColor?
-
+    
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     
@@ -23,13 +23,12 @@ class ResultViewController: UIViewController {
         
         bmiLabel.text = bmiValue
         adviceLabel.text = advice
-        self.view.backgroundColor = color
+        view.backgroundColor = color
     }
     
     //dismisses resoultVC
     @IBAction func recalculatePressed(_ sender: UIButton) {
-        //dismmiss the presented VC by dismiss method 
+        //dismmiss the presented VC by dismiss method
         dismiss(animated: true, completion: nil)
     }
-    
 }

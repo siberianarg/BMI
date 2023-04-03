@@ -40,7 +40,6 @@ class CalculateViewController: UIViewController {
             destinationVC.bmiValue = calculatorBrain.getBMIValue()
             destinationVC.advice = calculatorBrain.getAdvice()
             destinationVC.color = calculatorBrain.getColor()
-            
         }
     }
 }
